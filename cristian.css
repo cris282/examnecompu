@@ -3,5 +3,6 @@ font-family: Bold Italic;
 }
 #cs{
 border-radius: 30px;
-
+position: relative;
+border: 4px solid white;
 }
