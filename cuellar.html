@@ -144,6 +144,7 @@ font-family: Bold Italic;
    #boton12:hover{
     text-decoration: underline;
   }
+<<<<<<< HEAD
 
   #israel{
     position: absolute;
@@ -172,114 +173,122 @@ font-family: Bold Italic;
   
 
 
+=======
+>>>>>>> 0bfc2e8d54d1e55b0078bd98c2b1f614be64c330
   </style>
+  <script>
+    function reproducirHimno(id) {
+      const audio = document.getElementById(id);
+      detenerTodosLosHimnos();
+      audio.play();
+    }
+
+    function pausarHimno(id) {
+      const audio = document.getElementById(id);
+      audio.pause();
+      audio.currentTime = 0;
+    }
+
+    function detenerTodosLosHimnos() {
+      const audios = document.querySelectorAll("audio");
+      audios.forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+    }
+  </script>
 </head>
+
 <body>
-  <!--nav-->
+<div class="grid grid-cols-2 gap-4">
+<!-- Siria -->
+<button id="boton1" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  <a href="cristian.html" class="text-white hover:text-blue-500">Siria</a>
+</button>
+<button id="boton2" onclick="reproducirHimno('audioSiria')" ondblclick="pausarHimno('audioSiria')" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  Himno
+</button>
+<audio id="audioSiria" src="Himno Siria.mp3"></audio>
 
-<p class="Scriptify">
+<!-- Líbano -->
+<button id="boton3" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  <a href="Libano.html" class="text-white hover:text-blue-500">Líbano</a>
+</button>
+<button id="boton4" onclick="reproducirHimno('audioLibano')" ondblclick="pausarHimno('audioLibano')" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  Himno
+</button>
+<audio id="audioLibano" src="libano.mp3"></audio>
 
-<!--DIVS U OPCIONES A MANO-->
+<!-- Israel -->
+<button id="boton5" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  <a href="israel.html" class="text-white hover:text-blue-500">Israel</a>
+</button>
+<button id="boton6" onclick="reproducirHimno('audioIsrael')" ondblclick="pausarHimno('audioIsrael')" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  Himno
+</button>
+<audio id="audioIsrael" src="Himno Israel.mp3"></audio>
 
-<!--DIVS DE FLOWBIT-->
-<button id="boton1" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-INFO
-</span>
+<!-- Jordania -->
+<button id="boton7" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  <a href="jordania.html" class="text-white hover:text-blue-500">Jordania</a>
 </button>
-<button id="boton2" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-HIMNO
-</span>
+<button id="boton8" onclick="reproducirHimno('audioJordania')" ondblclick="pausarHimno('audioJordania')" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  Himno
 </button>
-<button id="boton3" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-INFO
-</span>
-</button>
-<button id="boton4" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-HIMNO
-</span>
-</button>
-<button id="boton5" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-INFO
-</span>
-</button>
-<button id="boton6" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-HIMNO
-</span>
-</button>
-<button id="boton7" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-INFO
-</span>
-</button>
-<button id="boton8" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-HIMNO
-</span>
-</button>
-<button id="boton9" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-INFO
-</span>
-</button>
-<button id="boton10" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-HIMNO
-</span>
-</button>
-<button id="boton11" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-INFO
-</span>
-</button>
-<button id="boton12" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+<audio id="audioJordania" src="Himno Jordania.mp3"></audio>
 
-HIMNO
-</span>
+<!-- Irak -->
+<button id="boton9" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  <a href="irak.html" class="text-white hover:text-blue-500">Irak</a>
 </button>
-<nav id="cl" class="bg-white border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="escudo-removebg-preview.png" class="h-14" alt="San Pablo Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Las Guerras del Medio Orriente</span>
-    </a>
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" id="servi" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Servicios</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contactos</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Partes</a>
-        </li>
-      </ul>
+<button id="boton10" onclick="reproducirHimno('audioIrak')" ondblclick="pausarHimno('audioIrak')" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  Himno
+</button>
+<audio id="audioIrak" src="Himno Irak.mp3"></audio>
+
+<!-- Turquía -->
+<button id="boton11" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  <a href="Turquia.html" class="text-white hover:text-blue-500">Turquía</a>
+</button>
+<button id="boton12" onclick="reproducirHimno('audioTurquia')" ondblclick="pausarHimno('audioTurquia')" class="inline-block bg-black text-white border border-cyan-400 hover:text-blue-500 px-4 py-2 rounded">
+  Himno
+</button>
+<audio id="audioTurquia" src="Himno Turquía.mp3"></audio>
+
+</div>
+  
+  <!-- NAV -->
+  <nav id="cl" class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3">
+        <img src="escudo-removebg-preview.png" class="h-14" alt="Logo" />
+        <span class="text-2xl font-semibold dark:text-white">Las Guerras del Medio Oriente</span>
+      </a>
+      <div class="hidden md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 font-medium">
+          <li><a href="#" class="nav-link">Servicios</a></li>
+          <li><a href="#" class="nav-link">Contactos</a></li>
+          <li><a href="#" class="nav-link">Partes</a></li>
+        </ul>
+      </div>
     </div>
+<<<<<<< HEAD
   </div>
 </nav>
 <div id="israel">Israel</div>
 <div id="jordania">Jordania</div>
 <div id="prueba"></div>
+=======
+  </nav>
+
+>>>>>>> 0bfc2e8d54d1e55b0078bd98c2b1f614be64c330
 
 </p>
 <!--fin de nav-->
 <img src="MAPAG.png" alt="" id="imagenmapa">
 <img src="SiriaN.png" alt="" id="Siria">
 
-
+<a href="main.cpp"></a> descargar sofware</a>
 
 </body>
 </html>

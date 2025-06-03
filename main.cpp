@@ -1,4 +1,4 @@
-#include <iostream>
+3#include <iostream>
 #include <string>
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
 
     do {
         if (totalGeneral >= 20) {
-            cout << "Ya se alcanzó el límite total de 20 personas (padres + niños).\n";
+            cout << "Ya se alcanzï¿½ el lï¿½mite total de 20 personas (padres + niï¿½os).\n";
             break;
         }
 
@@ -48,7 +48,7 @@ int main() {
             cin >> padres[totalPadres].nombre;
             cout << "Apellido: ";
             cin >> padres[totalPadres].apellido;
-            cout << "Profesión: ";
+            cout << "Profesiï¿½n: ";
             cin >> padres[totalPadres].profesion;
             cout << "Estado civil: ";
             cin >> padres[totalPadres].estado_civil;
@@ -59,14 +59,14 @@ int main() {
             cout << "DPI: " << padres[totalPadres].dpi << endl;
             cout << "Nombre: " << padres[totalPadres].nombre << endl;
             cout << "Apellido: " << padres[totalPadres].apellido << endl;
-            cout << "Profesión: " << padres[totalPadres].profesion << endl;
+            cout << "Profesiï¿½n: " << padres[totalPadres].profesion << endl;
             cout << "Estado civil: " << padres[totalPadres].estado_civil << endl;
             cout << "Nacionalidad: " << padres[totalPadres].nacionalidad << endl;
 
             totalPadres++;
             totalGeneral++;
         } else if (opcion == 2) {
-            cout << "--- Ingreso de datos del niño ---\n";
+            cout << "--- Ingreso de datos del niï¿½o ---\n";
             cout << "CUI: ";
             cin >> ninos[totalNinos].cui;
             cout << "Nombre: ";
@@ -91,21 +91,21 @@ int main() {
             totalNinos++;
             totalGeneral++;
         } else {
-            cout << "Opción no válida.\n";
+            cout << "Opciï¿½n no vï¿½lida.\n";
         }
 
         if (totalGeneral >= 20) {
-            cout << "\nSe ha alcanzado el límite total de 20 personas. Fin del ingreso.\n";
+            cout << "\nSe ha alcanzado el lï¿½mite total de 20 personas. Fin del ingreso.\n";
             break;
         }
 
-        cout << "\n¿Desea ingresar otra persona? (Sí,No): ";
+        cout << "\nï¿½Desea ingresar otra persona? (Sï¿½,No): ";
         cin >> continuar;
     } while (continuar == 1);
 
     cout << "\n--- Resumen final ---\n";
     cout << "Padres/madres ingresados: " << totalPadres << endl;
-    cout << "Niños ingresados: " << totalNinos << endl;
+    cout << "Niï¿½os ingresados: " << totalNinos << endl;
 
     return 0;
 }
