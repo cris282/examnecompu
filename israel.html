@@ -1,156 +1,147 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Israel y la Guerra en Medio Oriente</title>
-    <link rel="icon" href="mua.webp" type=".jpg">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="irak.css">
+    <title>ISRAEL</title>
+</head>
+<script>
+    function transformar(){
+        document.getElementById('cuadro').style.opacity="0%";
+        document.getElementById('cuadro').style.transitionDuration="3s";
     }
-    nav {
-      background-color: #003366;
-      color: white;
-      padding: 15px;
-      display: flex;
-      justify-content: space-around;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+</script>
+<style>
+    body{
+      background: linear-gradient(90deg,rgba(165, 176, 217, 1) 0%, rgba(255, 255, 255, 1) 100%);
     }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    header {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/d/d4/Israel_Flag_map.png') no-repeat center center;
-      background-size: cover;
-      height: 200px;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-shadow: 2px 2px 4px #000;
-      margin-bottom: 0;
-    }
-    main {
-      padding: 20px 40px;
-      margin-top: -40px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    #israi{
-        width: 200px;
-
-    }
-    #isra{
-        font-size: 10pt;
-    }
-    #te2{
+    #text1{
         position: absolute;
-        top: 83%;
-        left: 20%;
-        font-size: 16pt;
-    }
-    #cong{
-        position: absolute;
-        width: 220px;
-        height: 150px;
-        top: 88%;
-        left: 20%;
-
-    }
-    #isramap{
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        top: 78%;
+        top: 13%;
         left: 50%;
     }
-    
-    #te3{
+    #text2{
         position: absolute;
-        top: 90%;
-        left: 37%;
+        top: 27%;
+        left: 42%;
     }
-    
-  </style>
-</head>
+    #text3{
+        position: absolute;
+        top: 45%;
+        left: 42%;
+    }
+    #text4{
+        position: absolute;
+        top: 62%;
+        left: 42%;
+    }
+    #text5{
+        position: absolute;
+        top: 77%;
+        left: 73%;
+        color: white;
+        background-color: rgb(25, 18, 116);
+        border-radius: 10px;
+        width: 300px;
+        height: 130px;
+    }
+    #cuadro{
+        position: absolute;
+        top: 77%;
+        left: 73%;
+        width: 300px;
+        height: 130px;
+        background-color: rgb(25, 18, 116);
+        border-radius: 10px;
+    }
+    #img1{
+        position: absolute;
+        left: 60%;
+        top: 79%;
+        width: 100px;
+        height: 100px; 
+        transform: rotate(90deg);
+    }
+    #pres{
+        position: absolute;
+        top: 85%;
+        left: 46%;
+        font-size: x-large;
+    }
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color: none;
+    }
+    #img2{
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        width: 73px;
+        height: 50px;
+    }
+    .btn3{
+        position: absolute;
+        top: 3.5%;
+        left: 90%;
+        font-weight: bold;
+    }
+    .btn2{
+        position: absolute;
+        top: 3.5%;
+        left: 83%;
+        font-weight: bold;
+    }
+    .btn1{
+        position: absolute;
+        top: 3.5%;
+        left: 75%;
+        font-weight: bold;
+    }
+    .btn{
+        position: absolute;
+        top: 3.5%;
+        left: 68%;
+        font-weight: bold;
+        color: rgb(25, 18, 116);
+    }
+    .btn3:hover{
+        color: rgb(25, 18, 116);
+    }
+    .btn2:hover{
+        color: rgb(25, 18, 116);
+    }
+    .btn1:hover{
+        color: rgb(25, 18, 116);
+    }
+    #text6{
+        position: absolute;
+        top: 1.5%;
+        left: 7%;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+</style>
+<nav>
+    <img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/1200px-Flag_of_Israel.svg.png" alt="">
+        <button class="btn">Home</button>
+        <button class="btn1">Info.</button>
+        <button class="btn2">Turismo</button>
+        <button class="btn3">Hospedaje</button>
+        <p id="text6">Israel</p>
+</nav>
 <body>
-
-  <nav>
-    <a href="#pais">Sobre Israel</a>
-    <a href="#guerra">Guerra en Medio Oriente</a>
-    <a href="#imagenes">Imágenes</a>
-  </nav>
-
-  <header>
-    <h1>Israel y la Guerra del Medio Oriente</h1>
-  </header>
-
-  <main>
-    <section id="pais">
-      <h2>Sobre Israel</h2>
-      <p>Israel es un país ubicado en el Medio Oriente, a orillas del mar Mediterráneo. Limita con Líbano al norte, Siria al noreste, Jordania al este, Egipto al suroeste y con los territorios palestinos de Cisjordania y la Franja de Gaza. Su capital es Jerusalén, aunque Tel Aviv es reconocida internacionalmente como el centro económico y diplomático del país.</p>
-      <p>Israel fue fundado en 1948 como un estado judío tras la resolución de las Naciones Unidas de 1947 que propuso la partición de Palestina en dos estados, uno judío y otro árabe. Desde entonces, ha experimentado una intensa historia marcada por conflictos regionales, avances científicos y un crecimiento económico notable.</p>
-      <p>El país es líder en tecnología, medicina, agricultura y defensa. Además, alberga lugares sagrados para las tres principales religiones monoteístas: judaísmo, cristianismo e islam. Entre los sitios más emblemáticos están el Muro de los Lamentos, la Iglesia del Santo Sepulcro y la Cúpula de la Roca.</p>
-    </section>
-
-    <section id="guerra">
-      <h2>La Guerra en el Medio Oriente</h2>
-      <p>La región del Medio Oriente ha sido históricamente inestable debido a diferencias religiosas, étnicas, territoriales y políticas. Israel ha estado en conflicto con muchos de sus vecinos árabes desde su fundación. Entre los eventos más destacados están las guerras árabe-israelíes (1948, 1956, 1967, 1973), la ocupación de territorios palestinos, las intifadas y las constantes tensiones con Gaza.</p>
-      <p>Uno de los conflictos más actuales es el enfrentamiento con el grupo Hamas, que controla la Franja de Gaza. Este conflicto ha resultado en múltiples enfrentamientos militares, misiles lanzados contra ciudades israelíes y bombardeos en Gaza. Las consecuencias han sido devastadoras para civiles en ambos lados, con miles de muertos, heridos y desplazados.</p>
-      <p>La comunidad internacional ha intentado mediar la paz en varias ocasiones. Sin embargo, las diferencias entre las partes, la radicalización de los grupos, la construcción de asentamientos israelíes en Cisjordania y el bloqueo de Gaza dificultan una solución pacífica. El conflicto israelí-palestino sigue siendo uno de los más complejos y largos del mundo moderno.</p>
-      <p>Además, la guerra en Medio Oriente no se limita solo a Israel. Involucra también a países como Siria, Irán, Irak y Arabia Saudita, así como a grupos como Hezbollah, ISIS y otros movimientos armados. Las disputas por el poder regional, el petróleo y las ideologías religiosas también alimentan la violencia.</p>
-    </section>
-
-    <section id="imagenes">
-      <h2>Imágenes</h2>
-        <div id="isra">
-            <h1>Bandera</h1>
-            <img id="israi" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/1200px-Flag_of_Israel.svg.png" alt="">
-        </div>
-        <div id="isra2">
-            <h1 id="te2">Conflicto en Gaza</h1>
-        </div>
-        <div id="te3"><h1>Mapa de Israel----></h1></div>
-        <img id="cong" src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/013a/live/266b1e50-6f82-11ee-8285-75526db9547e.jpg.webp" alt="">
-        <img id="isramap" src="https://media.istockphoto.com/id/487849408/es/vector/israel-mapa-pol%C3%ADtico.jpg?s=170667a&w=0&k=20&c=qn5HzbeT8kyEZHq-aGNd2lBWBwMsbMeqh-rOiqnvvaU=" alt="">
-    </section>
-  </main>
-  <body>
-
-  <audio>
-
-    <source src="">
-
-  </audio>
-
-</body>
-</html>
-
-  <footer>
-    <p>&copy; 2025 Información educativa sobre Israel y la Guerra del Medio Oriente</p>
-  </footer>
-
+    <img class="inline-block h-auto max-w-lg transition-all duration-300 rounded-lg blur-xs hover:blur-none" src="imagenisr.png" alt="image description">
+    <h1 id="text1" class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-black md:text-5xl lg:text-6xl dark:text-black">Hablemos de <mark class="px-2 text-white bg-blue-600 rounded-sm dark:bg-blue-900">Israel</mark></h1>
+    <p id="text2" class="mb-3 text-black dark:text-black first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black dark:first-letter:text-black first-letter:me-3 first-letter:float-start">Israel es un país ubicado en el Mediterráneo oriental. <br> Una nación pequeña pero con una geografía sorprendentemente diversa. A lo largo de su estrecha franja costera se encuentran las principales ciudades y la mayoría de la población, mientras que hacia el este se elevan las colinas de Galilea y Judea.</p>
+    <p id="text3" class="dark:text-black"> El sur del país está dominado por el desierto del Néguev, una vasta región árida que cubre aproximadamente la mitad de su territorio, y en el este, el Valle del Jordán es un rasgo geográfico prominente, albergando el Mar Muerto, el punto más bajo de la Tierra.  Israel comparte fronteras con Líbano al norte, Siria al noreste, Jordania al este y Egipto al suroeste.</p>
+    <p id="text4" class="dark:text-black">La capital de Israel es Jerusalén, una ciudad con una profunda significancia religiosa para judíos, cristianos y musulmanes, repleta de sitios sagrados y una historia milenaria. Sin embargo, Tel Aviv-Yafo es el principal centro económico y cultural del país, una metrópolis moderna y vibrante conocida por su arquitectura Bauhaus, sus playas y su bulliciosa vida.</p>
+    <p id="text5"> Tras siglos de dispersión de la diáspora judía, el movimiento sionista a finales del siglo XIX y principios del XX abogó por el retorno del pueblo judío a su patria ancestral.</p>
+    <div id="cuadro" onclick="transformar()"></div>
+        <img src="https://cdn-icons-png.flaticon.com/512/9417/9417126.png" id="img1">
+    <p id="pres">Presiona aquí</p>
 </body>
 </html>
