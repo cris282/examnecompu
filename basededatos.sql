@@ -19,5 +19,5 @@ CREATE TABLE BEBE (
     -> NACIONALIDAD VARCHAR(20) FOREIGN KEY
     -> );
     INSERT INTO BEBE (CUI, NOMBRE_COMPLETO, FECHA_NACIMIENTO, LUGAR_NACIMINETO, NACIONALIDAD)
-    -> VALUES ('3281946890101', 'Mateo Lara', '25/10/2006', 'Giudad de Guatemala', 'Guatemalteco');
+    -> VALUES ('3281946890101', 'Mateo Lara', '25/10/2006', 'Ciudad de Guatemala', 'Guatemalteco');
      select * from BEBE;
