@@ -11,7 +11,7 @@ struct PadreMadre {
     string nacionalidad;
 };
 
-struct nino {
+struct Nino {
     string cui;
     string nombre;
     string apellido;
@@ -22,41 +22,40 @@ struct nino {
 
 int main() {
     PadreMadre padres[20];
-    nino ninos[20];
+    Nino ninos[20];
     int totalPadres = 0;
     int totalNinos = 0;
     int totalGeneral = 0;
     int opcion, continuar;
 
     do {
-        if (total>= 20) {
+        if (totalGeneral >= 20) {
             cout << "Ya se alcanzó el límite total de 20 personas (padres + niños).\n";
             break;
         }
 
-        cout << "\nSeleccione una opción:\n";
+        cout << "\nSeleccione una opcion:\n";
         cout << "1. Ingresar datos de un padre o madre\n";
-        cout << "2. Ingresar datos de un niño\n";
-        cout << "Opción: ";
+        cout << "2. Ingresar datos de un nino\n";
+        cout << "Opcion: ";
         cin >> opcion;
-        cin.ignore();
 
         if (opcion == 1) {
-            cout << "\n--- Ingreso de datos del padre o madre ---\n";
-            cout << "DPI: ";
-            getline(cin, padres[totalPadres].dpi);
+            cout << "--- Ingreso de datos del padre o madre ---\n";
+            cout << "DPI (sin espacios): ";
+            cin >> padres[totalPadres].dpi;
             cout << "Nombre: ";
-            getline(cin, padres[totalPadres].nombre);
+            cin >> padres[totalPadres].nombre;
             cout << "Apellido: ";
-            getline(cin, padres[totalPadres].apellido);
+            cin >> padres[totalPadres].apellido;
             cout << "Profesión: ";
-            getline(cin, padres[totalPadres].profesion);
+            cin >> padres[totalPadres].profesion;
             cout << "Estado civil: ";
-            getline(cin, padres[totalPadres].estado_civil);
+            cin >> padres[totalPadres].estado_civil;
             cout << "Nacionalidad: ";
-            getline(cin, padres[totalPadres].nacionalidad);
+            cin >> padres[totalPadres].nacionalidad;
 
-            cout << "\n--- DATOS INGRESADOS ---\n";
+            cout << "--- datos ingresados---\n";
             cout << "DPI: " << padres[totalPadres].dpi << endl;
             cout << "Nombre: " << padres[totalPadres].nombre << endl;
             cout << "Apellido: " << padres[totalPadres].apellido << endl;
@@ -67,21 +66,21 @@ int main() {
             totalPadres++;
             totalGeneral++;
         } else if (opcion == 2) {
-            cout << "\n--- Ingreso de datos del niño ---\n";
+            cout << "--- Ingreso de datos del niño ---\n";
             cout << "CUI: ";
-            getline(cin, ninos[totalNinos].cui);
+            cin >> ninos[totalNinos].cui;
             cout << "Nombre: ";
-            getline(cin, ninos[totalNinos].nombre);
+            cin >> ninos[totalNinos].nombre;
             cout << "Apellido: ";
-            getline(cin, ninos[totalNinos].apellido);
+            cin >> ninos[totalNinos].apellido;
             cout << "Lugar de nacimiento: ";
-            getline(cin, ninos[totalNinos].lugar_nacimiento);
-            cout << "Fecha de nacimiento (DD/MM/AAAA): ";
-            getline(cin, ninos[totalNinos].fecha_nacimiento);
+            cin >> ninos[totalNinos].lugar_nacimiento;
+            cout << "Fecha de nacimiento: ";
+            cin >> ninos[totalNinos].fecha_nacimiento;
             cout << "Nacionalidad: ";
-            getline(cin, ninos[totalNinos].nacionalidad);
+            cin >> ninos[totalNinos].nacionalidad;
 
-            cout << "\n--- DATOS INGRESADOS ---\n";
+            cout << "\n--- datos ingresados ---\n";
             cout << "CUI: " << ninos[totalNinos].cui << endl;
             cout << "Nombre: " << ninos[totalNinos].nombre << endl;
             cout << "Apellido: " << ninos[totalNinos].apellido << endl;
@@ -100,9 +99,8 @@ int main() {
             break;
         }
 
-        cout << "\n¿Desea ingresar otra persona? (1 = Sí, 0 = No): ";
+        cout << "\n¿Desea ingresar otra persona? (Sí,No): ";
         cin >> continuar;
-        cin.ignore();
     } while (continuar == 1);
 
     cout << "\n--- Resumen final ---\n";
@@ -111,4 +109,5 @@ int main() {
 
     return 0;
 }
+
 
