@@ -10,8 +10,6 @@ $FechaNacimiento=$_GET['FECHA_NACIMIENTO'];
 $LugarNacimiento=$_GET['LUGAR_NACIMIENTO'];
 $Nacionalidad=$_GET['NACIONALIDAD'];
 
-
-
 if(isset($_GET['RegistrarPadre'])){
 $aurtorizacion=mysqli_connect("localhost","root","","RENAP");
 $inst="insert into PADRES(DPI,NOMBRE,PROFESION,ESTADO_CIVIL,NACIONALIDAD) values('$NoDPI','$NombrePadre','$Profesion','$EstadoCivil','$Nacionalidad')";
@@ -26,7 +24,6 @@ echo $inst;
 mysqli_query($aurtorizacion,$inst); 
 header('location:basededatos.sql');
 }
-
 
 if(isset($_GET['EliminarPadre'])){
    $aurtorizacion=mysqli_connect("localhost","root","","RENAP");
@@ -50,7 +47,6 @@ echo $inst;
 mysqli_query($aurtorizacion,$inst); 
 header('location:basededatos.sql');
 }
-
 
 if(isset($_GET['EliminarPartida'])){
    $aurtorizacion=mysqli_connect("localhost","root","","RENAP");
