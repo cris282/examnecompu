@@ -118,5 +118,12 @@ border: 4px solid white;
 .sg:hover {
     color: rgb(255, 255, 255);
 }
-
-
+.sge{
+    top: -93px;
+    position: relative;
+}
+.sdf{
+    font-family: Bold Italic;
+    text-align: center;
+    font-size: 34px;
+}
