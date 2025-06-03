@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="irak.css">
+    <title>TURQUÍA</title>
+</head>
+<script>
+    function transformar(){
+        document.getElementById('cuadro').style.opacity="0%";
+        document.getElementById('cuadro').style.transitionDuration="3s";
+    }
+</script>
+<style>
+    body{
+        background: linear-gradient(90deg,rgba(201, 113, 113, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    }
+    #text1{
+        position: absolute;
+        top: 13%;
+        left: 50%;
+    }
+    #text2{
+        position: absolute;
+        top: 27%;
+        left: 42%;
+    }
+    #text3{
+        position: absolute;
+        top: 45%;
+        left: 42%;
+    }
+    #text4{
+        position: absolute;
+        top: 62%;
+        left: 42%;
+    }
+    #text5{
+        position: absolute;
+        top: 77%;
+        left: 73%;
+        color: white;
+        background-color: rgb(116, 18, 18);
+        border-radius: 10px;
+        width: 300px;
+        height: 130px;
+    }
+    #cuadro{
+        position: absolute;
+        top: 77%;
+        left: 73%;
+        width: 300px;
+        height: 130px;
+        background-color: rgb(116, 18, 18);
+        border-radius: 10px;
+    }
+    #img1{
+        position: absolute;
+        left: 60%;
+        top: 79%;
+        width: 100px;
+        height: 100px; 
+        transform: rotate(90deg);
+    }
+    #pres{
+        position: absolute;
+        top: 85%;
+        left: 46%;
+        font-size: x-large;
+    }
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color: none;
+    }
+    #img2{
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        width: 73px;
+        height: 50px;
+    }
+    .btn3{
+        position: absolute;
+        top: 3.5%;
+        left: 90%;
+        font-weight: bold;
+    }
+    .btn2{
+        position: absolute;
+        top: 3.5%;
+        left: 83%;
+        font-weight: bold;
+    }
+    .btn1{
+        position: absolute;
+        top: 3.5%;
+        left: 75%;
+        font-weight: bold;
+    }
+    .btn{
+        position: absolute;
+        top: 3.5%;
+        left: 68%;
+        font-weight: bold;
+        color: rgb(116, 18, 18);
+    }
+    .btn3:hover{
+        color: rgb(116, 18, 18);
+    }
+    .btn2:hover{
+        color: rgb(116, 18, 18);
+    }
+    .btn1:hover{
+        color: rgb(116, 18, 18);
+    }
+    #text6{
+        position: absolute;
+        top: 1.5%;
+        left: 7%;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+</style>
+<nav>
+    <img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png" alt="">
+        <button class="btn">Home</button>
+        <button class="btn1">Hoteles</button>
+        <button class="btn2">Visitas</button>
+        <button class="btn3">Viajes</button>
+        <p id="text6">Turquía</p>
+</nav>
+<body>
+    <img class="inline-block h-auto max-w-lg transition-all duration-300 rounded-lg blur-xs hover:blur-none" src="imagentu.png" alt="image description">
+    <h1 id="text1" class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-black md:text-5xl lg:text-6xl dark:text-black">Hablemos de <mark class="px-2 text-white bg-blue-600 rounded-sm dark:bg-red-900">Turquía</mark></h1>
+    <p id="text2" class="mb-3 text-black dark:text-black first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black dark:first-letter:text-black first-letter:me-3 first-letter:float-start">Turquía, oficialmente la República de Turquía, <br> es un país fascinante que sirve como un puente geográfico y cultural entre Europa y Asia. Ubicada estratégicamente en la península de Anatolia, su territorio se extiende principalmente en Asia Menor y una pequeña parte en la península de los Balcanes en el sudeste de Europa.</p>
+    <p id="text3" class="dark:text-black">Limita con el Mar Negro al norte, Georgia y Armenia al noreste, Azerbaiyán (exclave de Najicheván) e Irán al este, Irak y Siria al sureste, el Mar Mediterráneo y Chipre al sur, el Mar Egeo al oeste, y Grecia y Bulgaria al noroeste. Esta posición única ha moldeado su historia y su identidad, convirtiéndola en una encrucijada de civilizaciones.</p>
+    <p id="text4" class="dark:text-black">Turquía, oficialmente la República de Turquía, es un país fascinante que sirve como un puente geográfico y cultural entre Europa y Asia. Ubicada estratégicamente en la península de Anatolia, su territorio se extiende principalmente en Asia Menor y una pequeña parte en la península de los Balcanes en el sudeste de Europa.</p>
+    <p id="text5">Su rica historia se refleja en sus impresionantes monumentos, como la majestuosa Hagia Sophia, la icónica Mezquita Azul, el suntuoso Palacio de Topkapi y el bullicioso Gran Bazar.</p>
+    <div id="cuadro" onclick="transformar()"></div>
+        <img src="https://cdn-icons-png.flaticon.com/512/9417/9417126.png" id="img1">
+    <p id="pres">Presiona aquí</p>
+</body>
+</html>
