@@ -1,4 +1,4 @@
-#include <iostream>
+3#include <iostream>
 #include <string>
 using namespace std;
 
@@ -30,7 +30,11 @@ int main() {
 
     do {
         if (totalGeneral >= 20) {
+<<<<<<< HEAD
             cout << "Ya se alcanza el limite total de 20 personas\n";
+=======
+            cout << "Ya se alcanz� el l�mite total de 20 personas (padres + ni�os).\n";
+>>>>>>> a303b5beeda3c1847fc19d287e532614f755ee05
             break;
         }
 
@@ -48,7 +52,11 @@ int main() {
             cin >> padres[totalPadres].nombre;
             cout << "Apellido: ";
             cin >> padres[totalPadres].apellido;
+<<<<<<< HEAD
             cout << "Profesion: ";
+=======
+            cout << "Profesi�n: ";
+>>>>>>> a303b5beeda3c1847fc19d287e532614f755ee05
             cin >> padres[totalPadres].profesion;
             cout << "Estado civil: ";
             cin >> padres[totalPadres].estado_civil;
@@ -59,14 +67,22 @@ int main() {
             cout << "DPI: " << padres[totalPadres].dpi << endl;
             cout << "Nombre: " << padres[totalPadres].nombre << endl;
             cout << "Apellido: " << padres[totalPadres].apellido << endl;
+<<<<<<< HEAD
             cout << "Profesion: " << padres[totalPadres].profesion << endl;
+=======
+            cout << "Profesi�n: " << padres[totalPadres].profesion << endl;
+>>>>>>> a303b5beeda3c1847fc19d287e532614f755ee05
             cout << "Estado civil: " << padres[totalPadres].estado_civil << endl;
             cout << "Nacionalidad: " << padres[totalPadres].nacionalidad << endl;
 
             totalPadres++;
             totalGeneral++;
         } else if (opcion == 2) {
+<<<<<<< HEAD
             cout << "--- Ingreso de datos del nino ---\n";
+=======
+            cout << "--- Ingreso de datos del ni�o ---\n";
+>>>>>>> a303b5beeda3c1847fc19d287e532614f755ee05
             cout << "CUI: ";
             cin >> ninos[totalNinos].cui;
             cout << "Nombre: ";
@@ -91,6 +107,7 @@ int main() {
             totalNinos++;
             totalGeneral++;
         } else {
+<<<<<<< HEAD
             cout << "Opcion no valida.\n";
         }
 
@@ -100,12 +117,27 @@ int main() {
         }
 
         cout << "\n¿Desea ingresar otra persona? (Si,No): ";
+=======
+            cout << "Opci�n no v�lida.\n";
+        }
+
+        if (totalGeneral >= 20) {
+            cout << "\nSe ha alcanzado el l�mite total de 20 personas. Fin del ingreso.\n";
+            break;
+        }
+
+        cout << "\n�Desea ingresar otra persona? (S�,No): ";
+>>>>>>> a303b5beeda3c1847fc19d287e532614f755ee05
         cin >> continuar;
     } while (continuar == 1);
 
     cout << "\n--- Resumen final ---\n";
     cout << "Padres/madres ingresados: " << totalPadres << endl;
+<<<<<<< HEAD
     cout << "Ninos ingresados: " << totalNinos << endl;
+=======
+    cout << "Ni�os ingresados: " << totalNinos << endl;
+>>>>>>> a303b5beeda3c1847fc19d287e532614f755ee05
 
     return 0;
 }
