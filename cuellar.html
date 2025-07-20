@@ -163,21 +163,20 @@ font-family: Bold Italic;
       }
     }
 
-    // Esperar a que cargue la página para asociar eventos
     window.onload = function() {
       const boton = document.getElementById('boton2');
       let timer = null;
 
-      // Clic simple → reproducir
+
       boton.addEventListener('click', () => {
         timer = setTimeout(() => {
           repAudio('Himno nacional de Siria - حماة الديار (ÁrabeES texto)');
-        }, 250); // tiempo para distinguir del doble clic
+        }, 250);
       });
 
       // Doble clic → pausar o continuar
       boton.addEventListener('dblclick', () => {
-        clearTimeout(timer); // evita conflicto con clic
+        clearTimeout(timer); 
         togglePlayPauseAudio();
       });
     };
@@ -192,15 +191,11 @@ font-family: Bold Italic;
       <a href="cristian.html">informacion</a>
     </span>
   </button>
-
-  <!-- Botón 2 (REPRODUCTOR DE AUDIO) -->
   <button id="boton2" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
     <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
       Himno
     </span>
   </button>
-
-  <!-- Reproductor de audio (invisible o visible con controles) -->
   <audio id="repAudio" controls style="margin-top: 20px;"></audio>
 </span>
 </button>
